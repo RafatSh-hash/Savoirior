@@ -1,0 +1,90 @@
+[
+  {
+    "strMeal": "Bean & Sausage Hotpot",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/vxuyrx1511302687.jpg",
+    "idMeal": "52848",
+    "category": "Stew",
+    "calorycount": 350,
+    "rating": 4.2
+  },
+  {
+    "strMeal": "Callaloo Jamaican Style",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ussyxw1515364536.jpg",
+    "idMeal": "52939",
+    "category": "Vegetarian",
+    "calorycount": 200,
+    "rating": 4.8
+  },
+  {
+    "strMeal": "Chakchouka",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/gpz67p1560458984.jpg",
+    "idMeal": "52969",
+    "category": "Breakfast",
+    "calorycount": 300,
+    "rating": 4.5
+  },
+  {
+    "strMeal": "Duck Confit",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wvpvsu1511786158.jpg",
+    "idMeal": "52907",
+    "category": "Main Course",
+    "calorycount": 450,
+    "rating": 4.0
+  },
+  {
+    "strMeal": "French Lentils With Garlic and Thyme",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/vwwspt1487394060.jpg",
+    "idMeal": "52815",
+    "category": "Side Dish",
+    "calorycount": 150,
+    "rating": 4.6
+  },
+  {
+    "strMeal": "French Omelette",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/yvpuuy1511797244.jpg",
+    "idMeal": "52915",
+    "category": "Breakfast",
+    "calorycount": 250,
+    "rating": 4.4
+  },
+  {
+    "strMeal": "Osso Buco alla Milanese",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/wwuqvt1487345467.jpg",
+    "idMeal": "52810",
+    "category": "Main Course",
+    "calorycount": 400,
+    "rating": 4.1
+  },
+  {
+    "strMeal": "Pizza Express Margherita",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/x0lk931587671540.jpg",
+    "idMeal": "53014",
+    "category": "Pizza",
+    "calorycount": 280,
+    "rating": 4.7
+  },
+  {
+    "strMeal": "Poutine",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/uuyrrx1487327597.jpg",
+    "idMeal": "52804",
+    "category": "Fast Food",
+    "calorycount": 550,
+    "rating": 3.9
+  },
+  {
+    "strMeal": "Three-cheese souffles",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/sxwquu1511793428.jpg",
+    "idMeal": "52912",
+    "category": "Dessert",
+    "calorycount": 320,
+    "rating": 4.3
+  },
+  {
+    "strMeal": "Turkey Meatloaf",
+    "strMealThumb": "https://www.themealdb.com/images/media/meals/ypuxtw1511297463.jpg",
+    "idMeal": "52845",
+    "category": "Meat",
+    "calorycount": 280,
+    "rating": 4.6
+  }
+]

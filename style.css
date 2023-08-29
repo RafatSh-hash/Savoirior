@@ -152,3 +152,17 @@ body {
         opacity: 0;
     }
 }
+
+.productBanner {
+
+    width: 100%;
+    height: 250px;
+
+    background-image: url('./Asset/images/banner5.jpg');
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+}
