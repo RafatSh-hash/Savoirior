@@ -35,7 +35,7 @@ const showProducts = (data) => {
             <h1 class="text-xl font-semibold">${food.strMeal.slice(0, 20)}</h1>
         <p class="font-semibold">Category : ${food.category}</p>
          <p>Rating: ${food.rating}</p>
-          <div class="w-full flex flex-row justify-end"><button class="py-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md">Buy Now!</button></div>
+          <div class="w-full flex flex-row justify-end"><button class="py-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md" type="button" onclick="console.log('clicked')">Buy Now!</button></div>
         </div>
        
     
@@ -63,27 +63,20 @@ const searchFood = () => {
 const placeMeal = (meals) => {
   meals.map((meal) => {
     console.log(meal);
-    const card = document.createElement("card");
-    card.innerHTML = `<div class="card card-side bg-base-100 shadow-xl">
-  <figure class="w-[40%]"><img src=${meal.strMealThumb} /></figure>
-  <div class="card-body">
-    <h2 class="card-title">${meal.strMeal.slice(0, 20)}</h2>
-    <p>Category : ${meal.strCategory}</p>
-    <p>${meal.strArea} Cousine</p>
-    <p>Main Ingredients : </p>
-    <ul>
-    <li class="text-lg font-semibold">${meal.strIngredient1}</li>
-    <li class="text-lg font-semibold">${meal.strIngredient2}</li>
-    <li class="text-lg font-semibold">${meal.strIngredient3}</li>
-    <li class="text-lg font-semibold">${meal.strIngredient4}</li>
-    <li class="text-lg font-semibold">${meal.strIngredient5}</li>
-   
-    </ul>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Watch</button>
-    </div>
-  </div>
-</div>`;
+    const card = document.createElement("a");
+    card.classList.add("card");
+    card.innerHTML = `
+    <div class="front" style="background-image: url('${meal.strMealThumb}')">
+        <p class="bg-black bg-opacity-40 p-2 rounded-md">${meal.strMeal}</p>
+      </div>
+      <div class="back">
+        <div>
+          <p>Meal is ${meal.strCategory} Category</p>
+          <p>Meal Tags : ${meal.strTags}</p>
+          <button class="btn btn-neutral" type="button" onclick="console.log('clicked')">Buy Now</button>
+        </div>
+      </div>
+      `;
     searchContainer.appendChild(card);
   });
 };
