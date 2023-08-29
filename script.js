@@ -69,10 +69,11 @@ const placeMeal = (meals) => {
     <div class="front" style="background-image: url('${meal.strMealThumb}')">
         <p class="bg-black bg-opacity-40 p-2 rounded-md">${meal.strMeal}</p>
       </div>
-      <div class="back">
+      <div class="back border border-green-500">
         <div>
           <p>Meal is ${meal.strCategory} Category</p>
           <p>Meal Tags : ${meal.strTags}</p>
+          <p>Ingredients : ${meal.strIngredient1}, ${meal.strIngredient2}, ${meal.strIngredient3}</p>
           <button class="btn btn-neutral" type="button" onclick="console.log('clicked')">Buy Now</button>
         </div>
       </div>
