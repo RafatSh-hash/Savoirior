@@ -19,7 +19,7 @@ const getBanner = async () => {
 getBanner();
 
 const getProducts = () => {
-  fetch("./public/dummy.json")
+  fetch("./Public/dummy.json")
     .then((res) => res.json())
     .then((data) => showProducts(data));
 };
