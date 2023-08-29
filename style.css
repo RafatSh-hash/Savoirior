@@ -1,3 +1,98 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: white;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    position: relative;
+    color: black;
+    /* Adjust the color */
+    transition: color 0.5s;
+}
+
+.nav-link:hover {
+    color: #41c300;
+    /* Adjust the color */
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #41c300;
+    /* Adjust the color */
+    transition: width 0.3s, left 0.3s;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 640px) and (min-width: 425px) {
+    .navbar {
+        justify-content: space-between;
+        /* Align the logo and hamburger to the right */
+    }
+
+    .nav-link {
+        padding: 1.5em;
+
+    }
+
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+
+        /* Change the order to move it to the right */
+    }
+
+    .nav-list {
+        font-weight: 700;
+        display: none;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5em;
+        /* Adjust the top margin */
+        right: 0;
+        width: 100%;
+        /* background-color: rgba(146, 255, 124, 0.4); */
+        padding: 0.5em 0.5em;
+        /* Adjust the background color */
+        backdrop-filter: blur(10px);
+        z-index: 10;
+    }
+
+    .nav-list.active {
+        display: flex;
+        justify-content: flex-end;
+        /* Move the links to the right */
+    }
+
+    .hamburger.active .line {
+        background-color: #41c300;
+        /* Adjust the color */
+    }
+}

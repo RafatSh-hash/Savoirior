@@ -1,22 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Savrio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>Savoirior</title>
 </head>
 
 <body>
   <div id="app"></div>
-  <div>
-    <h1>Hello From Savorio</h1>
-  </div>
+  <!-- navbarSection -->
+  <nav class="flex items-center justify-between p-2 navbar ">
+    <div class="flex flex-row items-center justify-between">
+      <div>
+        <img src="./Asset/logo.png" alt="Logo" class="h-14 mr-4">
+      </div>
+
+    </div>
+    <button class="hamburger">
+      <div class="line w-6 h-1 bg-black "></div>
+      <div class="line w-6 h-1 bg-black mt-1"></div>
+      <div class="line w-6 h-1 bg-black mt-1"></div>
+    </button>
+    <ul class="flex space-x-14 nav-list me-0 md:me-2 lg:me-5">
+      <li><a href="#" class="nav-link font-semibold">Home</a></li>
+      <li><a href="#" class="nav-link font-semibold">About</a></li>
+      <li><a href="#" class="nav-link font-semibold">Contact</a></li>
+    </ul>
+  </nav>
+
 
 
 
   <script type="module" src="/main.js"></script>
+  <script src="./styling.js"></script>
 </body>
 
 </html>
