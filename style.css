@@ -211,14 +211,6 @@ html {
     font-family: "Nunito Sans", sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-color: var(--primary-light);
-    background-attachment: fixed;
-}
-
 .content {
     display: flex;
     margin: 0 auto;
@@ -297,7 +289,7 @@ body {
     padding: 2rem;
     font-size: 1.618rem;
     font-weight: 600;
-    color: #fff;
+
     overflow: hidden;
     font-family: Poppins, sans-serif;
 
@@ -320,7 +312,7 @@ body {
 }
 
 .back {
-    background: #fff;
+
     transform: rotateY(-180deg);
     padding: 0 2em;
 

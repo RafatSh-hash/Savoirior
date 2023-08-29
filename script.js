@@ -69,7 +69,7 @@ const placeMeal = (meals) => {
     card.classList.add("card");
     card.innerHTML = `
     <div class="front" style="background-image: url('${meal.strMealThumb}')">
-        <p class="bg-black bg-opacity-40 p-2 rounded-md">${meal.strMeal}</p>
+        <p class="bg-black bg-opacity-40 p-2 rounded-md text-white">${meal.strMeal}</p>
       </div>
       <div class="back border border-green-500 bg-[#87ff6f]">
         <div>
