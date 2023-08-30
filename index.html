@@ -53,7 +53,7 @@
           <div class="w-10 h-10 rounded-full">
             <img src="./Asset/icons/leaf.png" alt="">
           </div>
-          <h1 class="ms-3 text-lg font-semibold">Any food you want is fresh.</h1>
+          <h1 class="ms-3 text-lg font-semibold">Any food you purchase is fresh.</h1>
         </div>
         <div class="flex flex-row justify-start items-center  mt-3">
           <div class="w-10 h-10 rounded-full">
@@ -71,7 +71,7 @@
         </div>
 
       </div>
-      <p class="my-3 font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tenetur
+      <p class="my-3 font-semibold text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, tenetur
         architecto. Doloribus
         eius voluptatem
         provident accusamus totam laudantium, sapiente quidem labore odio, molestias maiores odit earum quos dolorem
@@ -730,10 +730,23 @@
   </div>
 
   <!-- contactUsSection -->
-  <div class="w-full md:w-10/12 lg:w-9/12 mx-auto ">
+  <div class="w-full md:w-10/12 lg:w-9/12 mx-auto flex flex-col md:flex-row lg:flex-row justify-center items-center ">
+    <div class="w-[90%] md:w-[50%] lg:w-[50%] my-5 mx-auto p-4">
+      <div class="relative w-[80%] h-72 bg-[#87ff6f] bg-opacity-50">
+        <div class="absolute top-10 -right-10 w-full h-full bg-black bg-opacity-50 bg-cover"
+          style="background-image: url('./Asset/images/baby.jpg')"></div>
+        <div class="absolute top-10 -right-10  w-full h-full flex justify-center items-center">
+          <h2 class="text-2xl md:text-4xl lg:text-5xl text-center font-bold text-[#87ff6f]">Help a soul, Fill Yourself
+            with
+            Contentment.</h2>
+
+        </div>
+      </div>
+    </div>
+
 
     <div
-      class="w-[90%] md:w-[70%] lg:w-[60%] my-5 mx-auto p-4 rounded-md shadow-2xl border-4 border-l-[#87ff6f] border-b-[#87ff6f]">
+      class="w-[90%] md:w-[50%] lg:w-[50%] my-5 mx-auto p-4 rounded-md shadow-2xl border-4 border-l-[#87ff6f] border-b-[#87ff6f]">
       <div class="title">
         <h1 class="font-semibold text-black">Contact us</h1>
       </div>
@@ -785,6 +798,45 @@
     </div>
 
   </div>
+
+  <!-- footerSection -->
+
+
+  <footer class="footer p-10 bg-[#87ff6f] bg-opacity-50 text-base-content mt-10">
+    <div>
+      <span class="footer-title font-bold">Services</span>
+      <a class="link link-hover font-bold">Branding</a>
+      <a class="link link-hover font-bold">Design</a>
+      <a class="link link-hover font-bold">Marketing</a>
+      <a class="link link-hover font-bold">Advertisement</a>
+    </div>
+    <div>
+      <span class="footer-title">Company</span>
+      <a class="link link-hover font-bold">About us</a>
+      <a class="link link-hover font-bold">Contact</a>
+      <a class="link link-hover font-bold">Jobs</a>
+      <a class="link link-hover font-bold">Press kit</a>
+    </div>
+    <div>
+      <span class="footer-title">Legal</span>
+      <a class="link link-hover font-bold">Terms of use</a>
+      <a class="link link-hover font-bold">Privacy policy</a>
+      <a class="link link-hover font-bold">Cookie policy</a>
+    </div>
+    <div>
+      <span class="footer-title">Newsletter</span>
+      <div class="form-control w-80">
+        <label class="label">
+          <span class="label-text">Enter your email address</span>
+        </label>
+        <div class="relative">
+          <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+          <button
+            class="py-3 px-3 mt-0.5 rounded-r-md bg-[#87ff6f] absolute top-0 right-0 rounded-l-none text-md font-bold">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 
