@@ -447,6 +447,6 @@ html {
 .polyA {
 
     background-color: rgb(74, 243, 41);
-
-    clip-path: polygon(0% 100%, 100% 10%, 100% 80%, 100% 100%, 20% 100%);
+    box-shadow: 10px 10px 0 0;
+    clip-path: polygon(0% 100%, 75% 10%, 75% 50%, 100% 60%, 100% 100%);
 }
