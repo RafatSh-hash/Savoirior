@@ -327,15 +327,11 @@ html {
 
 }
 
-/* reset */
-
-
-/* main */
 
 .container {
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 .cardC {
@@ -450,10 +446,10 @@ html {
     text-align: center;
 }
 
-span {
+/* span {
     display: inline-block;
     background: rgba(0, 0, 0, 0.05);
     border-radius: 4px;
     margin: 60px 0 0;
     padding: 8px 10px;
-}
+} */
