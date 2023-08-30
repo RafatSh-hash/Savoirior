@@ -498,7 +498,7 @@ html {
     text-align: center;
     color: #fff;
     padding: 4px;
-    border-radius: 25px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -519,13 +519,14 @@ html {
 }
 
 .social-icons {
-    position: absolute;
-    bottom: -25px;
-    left: 50%;
-    width: 50%;
-    transform: translateX(-50%);
+    /* position: absolute; */
+    /* right: 25px; */
+    /* left: 50%;
+    width: 50%; */
+
+    /* transform: translateX(-50%); */
     display: flex;
-    justify-content: space-around;
+    justify-content: end;
 }
 
 .social-icons div {
@@ -537,22 +538,10 @@ html {
 }
 
 
-.social-icons div .fab {
+/* .social-icons div .fab {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-}
-
-.social-icons div.facebook {
-    background: #5178d9;
-}
-
-.social-icons div.twitter {
-    background: #41caf6;
-}
-
-.social-icons div.google {
-    background: #fb4f4f;
-}
+} */
