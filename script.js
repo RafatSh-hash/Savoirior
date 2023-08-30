@@ -9,7 +9,7 @@ const getBanner = async () => {
   const data = await res.json();
   const meal = data.meals[0];
   polygon.style.backgroundImage = `url(${meal.strMealThumb})`;
-  polygonContent.innerHTML = `<div class="bg-black bg-opacity-50 w-[60%] h-fit p-5 shadow-xl">
+  polygonContent.innerHTML = `<div class="bg-black bg-opacity-50 w-[70%] h-fit p-5 shadow-xl">
    <h1 class="text-white text-4xl font-semibold">${meal.strMeal}</h1>
    <h3 class="text-xl text-white font-semibold my-3">Cousine : ${meal.strArea}</h3>
    <h3 class="text-xl text-white font-semibold my-3">Category : ${meal.strCategory}</h3>
