@@ -436,9 +436,7 @@ html {
     opacity: 0.8;
 }
 
-/* .container {
-    margin: 100px auto;
-} */
+
 
 .cardC {
     color: rgba(0, 0, 0, 0.9);
@@ -446,10 +444,9 @@ html {
     text-align: center;
 }
 
-/* span {
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    margin: 60px 0 0;
-    padding: 8px 10px;
-} */
+.polyA {
+
+    background-color: rgb(74, 243, 41);
+    border: 2px solid green;
+    clip-path: polygon(0% 100%, 100% 10%, 100% 80%, 100% 100%, 20% 100%);
+}
