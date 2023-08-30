@@ -1,16 +1,8 @@
-const hamburger = document.querySelector(".hamburger");
-const navList = document.querySelector(".nav-list");
-
-hamburger.addEventListener("click", () => {
-  navList.classList.toggle("active");
-  hamburger.classList.toggle("active");
-});
-
 (function () {
   var rotate, timeline;
 
   rotate = function () {
-    var container = document.querySelector(".container");
+    var container = document.querySelector(".containerS");
     var firstCard = container.firstElementChild;
 
     firstCard.style.transition = "opacity 0.4s ease-in-out";
