@@ -3,6 +3,9 @@ const polygonContent = document.getElementById("polygonContent");
 const foodContainer = document.getElementById("foodContainer");
 const searchContainer = document.getElementById("searchContainer");
 const searchInput = document.getElementById("searchInput");
+const badge = document.getElementById("badge");
+const totalPrice = document.getElementById("totalPrice");
+const charityGets = document.getElementById("charity");
 
 const getBanner = async () => {
   const res = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
