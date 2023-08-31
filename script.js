@@ -3,9 +3,11 @@ const polygonContent = document.getElementById("polygonContent");
 const foodContainer = document.getElementById("foodContainer");
 const searchContainer = document.getElementById("searchContainer");
 const searchInput = document.getElementById("searchInput");
-const badge = document.getElementById("badge");
-const totalPrice = document.getElementById("totalPrice");
-const charityGets = document.getElementById("charity");
+const badgeElement = document.getElementById("badge");
+const totalPriceElement = document.getElementById("totalPrice");
+const charityGetsElement = document.getElementById("charity");
+const foodListElement = document.getElementById("foodList");
+const totalItemsElement = document.getElementById("totalItems");
 
 const getBanner = async () => {
   const res = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
@@ -28,18 +30,23 @@ const getProducts = () => {
 };
 
 const showProducts = (data) => {
-  data.map((food) => {
+  data.map((meal) => {
     const card = document.createElement("card");
     card.innerHTML = `<div class="bg-white shadow-2xl rounded-xl p-5"><div><img class="transition-all duration-500 hover:scale-105" src="${
-      food.strMealThumb
+      meal.strMealThumb
     }" </div>
     
         <div class="p-5">
-            <h1 class="text-xl font-semibold">${food.strMeal.slice(0, 20)}</h1>
-        <p class="font-semibold">Category : ${food.category}</p>
-         <p>Rating: ${food.rating}</p>
+            <h1 class="mealName text-xl font-semibold">${meal.strMeal.slice(
+              0,
+              20
+            )}</h1>
+        <p class="font-semibold">Category : ${meal.category}</p>
+         <p>Rating: ${meal.rating}</p>
           <div class="w-full flex flex-row justify-end">
-          <button class="py-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md" type="button" onclick="console.log('clicked')">Buy Now!</button>
+          <button class="py-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md" type="button" onclick="{addToCart('${
+            meal.strMeal
+          }')}">Buy Now!</button>
           </div>
         </div>
        
@@ -72,7 +79,7 @@ const placeMeal = (meals) => {
     card.classList.add("card");
     card.innerHTML = `
     <div class="front" style="background-image: url('${meal.strMealThumb}')">
-        <p class="bg-black bg-opacity-40 p-2 rounded-md text-white">${
+        <p class="mealName bg-black bg-opacity-40 p-2 rounded-md text-white">${
           meal.strMeal
         }</p>
       </div>
@@ -91,10 +98,30 @@ const placeMeal = (meals) => {
           <p class="font-semibold text-base text-left">Ingredients : ${
             meal.strIngredient1
           }, ${meal.strIngredient2}, ${meal.strIngredient3}</p>
-          <button class="py-2 my-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md" type="button" onclick="console.log('clicked')">Buy Now!</button>
+          <button class="py-2 my-2 px-3 w-32 right-0 text-white font-bold rounded-lg bg-green-500 transition-all duration-500 hover:bg-green-600 hover:scale-105 hover:text-md" type="button" onclick="{addToCart('${
+            meal.strMeal
+          }')}">Buy Now!</button>
         </div>
       </div>
       `;
     searchContainer.appendChild(card);
   });
+};
+
+let totalPrice = 0;
+let count = 0;
+const addToCart = (mealName) => {
+  const price = 20;
+  totalPrice = totalPrice + price;
+  count = count + 1;
+  const charityAmmount = 0.2;
+  const charity = totalPrice * charityAmmount;
+  const li = document.createElement("li");
+  li.style.marginLeft = "20px";
+  li.innerText = mealName;
+  totalItemsElement.innerText = count;
+  badgeElement.innerText = count;
+  foodListElement.appendChild(li);
+  charityGetsElement.innerText = charity;
+  totalPriceElement.innerText = totalPrice;
 };
