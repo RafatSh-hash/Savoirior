@@ -64,7 +64,7 @@ getProducts();
 const searchFood = () => {
   const searchInputValue = searchInput.value;
   console.log(searchInputValue);
-  searchContainer.innerHTML = "";
+
   fetch(
     `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInputValue}`
   )
@@ -105,6 +105,7 @@ const placeMeal = (meals) => {
       </div>
       `;
     searchContainer.appendChild(card);
+    searchInput.value = "";
   });
 };
 

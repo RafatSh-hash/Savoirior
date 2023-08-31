@@ -480,10 +480,32 @@ html {
 }
 
 
-/* .social-icons div .fab {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-} */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+    /* Background color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #87ff6f;
+    /* Color of the thumb */
+    border-radius: 5px;
+    /* Border radius of the thumb */
+    border: 2px solid #64a05d;
+    /* Border around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #70fe42;
+    /* Color of the thumb on hover */
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+    /* Hide scrollbar buttons */
+}
