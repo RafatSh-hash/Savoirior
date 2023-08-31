@@ -6,6 +6,37 @@ body {
     /* background-color: black; */
 }
 
+.nav_link {
+    position: relative;
+    text-decoration: none;
+    color: gray;
+    /* Set your desired text color */
+    transition: color 0.3s ease-in-out;
+}
+
+.nav_link::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    /* Adjust this value to control the distance of the underline from the text */
+    left: 0;
+    width: 0;
+    height: 2px;
+    /* Adjust this value to control the thickness of the underline */
+    background-color: #333;
+    /* Set your desired underline color */
+    transition: width 0.5s ease-in-out;
+}
+
+.nav_link:hover {
+    color: #87ff6f;
+    /* Set your desired text color when hovered */
+}
+
+.nav_link:hover::before {
+    width: 100%;
+}
+
 
 .polygon-container {
     width: 100vh;
