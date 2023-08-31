@@ -73,6 +73,7 @@ const searchFood = () => {
 };
 
 const placeMeal = (meals) => {
+  console.log(meals.length);
   meals.map((meal) => {
     // console.log(meal);
     const card = document.createElement("a");
@@ -87,7 +88,7 @@ const placeMeal = (meals) => {
         <div>
         <p class="font-semibold text-sm mb-3 text-left">Instruction :${meal.strInstructions.slice(
           0,
-          300
+          200
         )}</p>
           <p class="font-semibold text-base text-left">Meal is ${
             meal.strCategory
